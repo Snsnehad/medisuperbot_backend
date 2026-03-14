@@ -1,0 +1,30 @@
+# ── Web framework ──────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.12
+starlette==0.38.6
+
+# ── LangChain ─────────────────────────────────────────────────────────────────
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-text-splitters==0.3.8
+
+# ── LLM providers ─────────────────────────────────────────────────────────────
+langchain-groq==0.3.8      # 0.2.4 needs groq<1, 0.3.8 works with groq 0.37.1
+                            # groq 0.37.1 auto-installed — fixes proxies error
+
+# ── Google Embeddings — PINNED for Python 3.11/3.12 ──────────────────────────
+google-genai==1.12.1
+langchain-google-genai==2.1.12
+
+# ── Vector database ───────────────────────────────────────────────────────────
+pinecone==5.4.2
+
+# ── PDF ───────────────────────────────────────────────────────────────────────
+pypdf==4.3.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.9.2
+tqdm==4.66.6
+aiofiles==24.1.0
